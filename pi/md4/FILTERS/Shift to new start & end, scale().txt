@@ -1,0 +1,14 @@
+# Shift to new start & end, scale()
+
+# this keeps the same number of elements, but shifts all elements to go
+# from a specified z_start to z_end. The distances between adjacent elements
+# in new list z are proportional to distances in the old list y.
+def scale(y,z_start,z_end):
+    z = [0]*len(y)
+    y_start = y[0]
+    y_end = y[len(y)-1]
+    a = (z_end-z_start)/(y_end-y_start)
+    b = z_start - a * y_start
+    for i in range(len(y)):
+        z[i] = a * y[i] + b
+    return z

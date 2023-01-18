@@ -1,0 +1,16 @@
+# Median filter2, medFilter2()
+
+# x is the input array. n = 2K + 1, the filter size. y is the output array.
+# Required: n >= 3. n is odd. len(x) > n.
+import numpy as np
+def medFilter2(x,n):
+    ze = (n-1)//2
+    xe = [0]*ze + x + [0]*ze
+    print ('xe = ', xe)
+    y = [0] * len(x)
+    if len(x)>=n:
+        for j in range(0,len(x)):
+            y[j]=np.median(xe[j:j+n])            
+    else:
+        y=x
+    return y

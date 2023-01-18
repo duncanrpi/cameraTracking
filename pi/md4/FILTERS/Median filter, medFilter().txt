@@ -1,0 +1,23 @@
+# Median filter, medFilter()
+# Median Filter 2. The advantage of this filter is the ability to smooth out sudden large errors in the corrupted signal. Median filter sorts an odd number (2K+1) of values in increasing or decreasing order. The middle (K+1) th value is chosen. Indexing starts at 1. 
+
+<b>start_average</b> is the average of the first K values. <b>end_average</b> is the average of the last K values.  
+<b>start_average</b> is added <b>K times</b> at the beginning, and <b>end_average</b> is added <b>K times</b> at the end so that the <b>output length is the same</b> as the input length.
+
+# x is the input array. n = 2K + 1, the filter size. y is the output array.
+# Required: n >= 3. n is odd. len(x) > n.
+import numpy as np
+from statistics import mean
+def medFilter(x,n):
+    ze = (n-1)//2
+    start_average = mean(x[0:ze])
+    end_average = mean(x[len(x)-ze:len(x)])
+    xe = [start_average]*ze + x + [end_average]*ze
+    print ('xe = ', xe)
+    y = [0] * len(x)
+    if len(x)>=n:
+        for j in range(0,len(x)):
+            y[j]=np.median(xe[j:j+n])            
+    else:
+        y=x
+    return y

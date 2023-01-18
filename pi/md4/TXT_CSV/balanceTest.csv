@@ -1,0 +1,2 @@
+Time stamp,Time,Doctor,Patient ID,,setupTime,recordTime,processTime,totalTime
+(y-m-d h:m:s),(s),,,,(s),(s),(s),(s)

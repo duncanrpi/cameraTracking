@@ -1,0 +1,29 @@
+# Moving average filter, no reduction, smooth()
+
+
+In this file,  
+x is an input list with length = len(x).  
+n is the number of points being averaged each time.  
+y is an output list with length = len(x).  
+The length is not reduced.  
+I think <b>moving average.ipynb</b> might be better than this because noise at beginning and end is reduced.
+
+# Required: n >= 3 and is odd
+from statistics import mean
+def smooth(x,n):    
+    if len(x)>=n:          
+        ze = (n-1)//2
+        start_average = mean(x[0:ze])
+        end_average = mean(x[len(x)-ze:len(x)])
+        print ('start_average, end_average = {:.3f}, {:.3f}' \
+               .format(start_average, end_average))
+        xe = [start_average]*ze + x + [end_average]*ze
+        print ('xe = ', ['{0:0.2f}'.format(k) for k in xe])          
+        y = [0] * len(x)        
+        for j in range(len(x)):
+            y[j]=sum(xe[0+j:n+j])/n        
+    else:
+        y=x
+    return y
+
+

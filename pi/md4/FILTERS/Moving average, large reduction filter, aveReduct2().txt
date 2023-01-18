@@ -1,0 +1,29 @@
+# Moving average, large reduction filter, aveReduct()
+Moving average reduction Filter replaces each n values with 1 value, their average. The advantage of this filter is noise reduction by having fewer values. Recommend using median filter first to remove large errors.
+
+import numpy as np
+from math import floor,ceil
+from statistics import mean
+x = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+n = 4
+
+# x is the input array. y is the output array.
+# len(y) = ceil(len(x)/n).
+def aveReduct(x,n):
+    num = len(x) / n
+    y = [0] * ceil(num)
+    if len(x)>=1:
+        for j in range(0,floor(num)):
+            y[j]=mean(x[j*n:j*n+n])   
+        if ceil(num) > num:
+            y[len(y)-1] = mean(x[n*floor(num):len(x)])        
+    else:
+        y=x
+    return y
+
+aveReduct(x,n)
+
+>> [2.5, 6.5, 10.5, 14]
+
+
+

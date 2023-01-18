@@ -1,0 +1,16 @@
+# Time reduction, first value filter, timeReduct()
+
+# replaces each n values of time with 1 value, the first time value in each group of n.
+# x is the input array. y is the output array.
+# len(y) = ceil(len(x)/n).
+def timeReduct(x,n):
+    num = len(x) / n
+    y = [0] * ceil(num)
+    if len(x)>=1:
+        for j in range(0,floor(num)):
+            y[j]=x[j*n]
+        if ceil(num) > num:
+            y[len(y)-1] = x[n*floor(num)]        
+    else:
+        y=x
+    return y
