@@ -1,0 +1,26 @@
+The folders and files are in the relative locations where they were used in a Raspberry Pi computer, but empty folders do not copy to GitHub.
+These are the folders and subfolders needed in a Raspberry Pi to be able to use this code.
+You must create any folders that are missing on GitHub. Please see the following folder list. Indents indicate levels.
+
+pi
+    Desktop
+    md4
+    pickle
+        runs
+        runsBalance
+        runsSitStand
+        runsTUG
+    process
+        balanceProcessed
+        balanceRecorded
+        frameRateProcessed
+        gaitSpeedProcessed
+        gaitSpeedRecorded
+        oldFrameRate
+        runs
+        videosLines
+        videosNoLines
+    runs
+    runsBalance
+    runsSitStand
+    runsTUG
