@@ -4,7 +4,7 @@ Reproducing this depends on having a similar hardware set up and a camera calibr
 
     pi/Desktop/CALIBRATION OF CAMERAS.txt.  
 
-Some code would have to be adapted to particular hardwares. A few programs can run without hardware.
+Some code would have to be adapted to particular hardwares. A few programs can run without hardware. Also, some software needs to be installed such as 1) Python3 programming language (version 3.7.3), 2) OpenCV (cv2) library of programming functions primarily for computer vision (version 3.4.6), 3) Imutils image processing functions (version 0.5.3), 4) VNC Server and Viewer in the RPi and cell phone, respectively, and 5) Rclone command line program.
 
 Most important operations are accessible through graphical user interface (GUI) programs (.py) on the Desktop.
 There are help files accessible with buttons in the GUIs.
