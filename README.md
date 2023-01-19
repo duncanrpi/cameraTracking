@@ -1,6 +1,6 @@
 A camera system has a Raspberry Pi computer, 3 cameras, and 2 DC motors. It performs the Short Physical Performance Battery (SPPB, Gait Speed, Standing Balance, 5 Times Sit Stand) and Timed Up and Go tests. There are graphical user interfaces and programs, all in Python.
 
-Reproducing this depends on having a similar hardware set up and a camera calibration described in 
+Reproducing this depends on having a similar hardware set up. You need to know horizontal field of view (degrees) and resolution (width, height) in pixels for left and right cameras which connect with USB. In the center is a PiCamera. A needed camera calibration for left andd right cameras is described in 
 
     pi/Desktop/CALIBRATION OF CAMERAS.txt.  
 
