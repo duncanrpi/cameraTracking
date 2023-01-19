@@ -10,8 +10,6 @@ Most important operations are accessible through graphical user interface (GUI) 
 There are help files accessible with buttons in the GUIs.
 Many programs are in md4 folder. There are some programs which are extra.
 
-The folders and files are in the relative locations where they were used in a Raspberry Pi computer, but empty folders do not copy to GitHub.
-These are the folders and subfolders needed in a Raspberry Pi to be able to use this code.
-You must create any folders that are missing on GitHub. Please see the file,  
+The folders and files are in the relative locations where they were used in a Raspberry Pi computer, but empty folders do not copy to GitHub. To be able to use this code, in a Raspberry Pi, you must create any folders that are missing on GitHub. Please see the file,  
 
     pi/Desktop/MISSING FOLDERS.txt.
