@@ -10,8 +10,6 @@ Most important operations are accessible through graphical user interface (GUI) 
 There are help files accessible with buttons in the GUIs.
 Many programs are in md4 folder. There are some programs which are extra.
 
-The folders and files are in the relative locations where they were used in a Raspberry Pi computer, but empty folders do not copy to GitHub. To be able to use this code, in a Raspberry Pi, you must create any folders that are missing on GitHub. Please see the file,  
+The folders and files are in the relative locations where they were used in a Raspberry Pi computer, but empty folders do not copy to GitHub. To be able to use this code, in a Raspberry Pi, you must create any folders and get any files that are missing on GitHub. Please see the file,  
 
-    pi/Desktop/FOLDERS TO CREATE.txt.
-
-Cite the code:[![DOI](https://zenodo.org/badge/590297493.svg)](https://zenodo.org/badge/latestdoi/590297493)
+    pi/Desktop/FOLDERS TO CREATE.txt. 

@@ -1,4 +1,10 @@
 The folders and files are in the relative locations where they were used in a Raspberry Pi computer, but empty folders do not copy to GitHub.
+
+Also, a file, haarcascade_frontalface_default.xml, must be downloaded from 
+https://github.com/Itseez/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml
+and placed in the Raspberry Pi at this location (you may have to create haarcascades folder) :
+/home/pi/md4/haarcascades/haarcascade_frontalface_default.xml
+
 These are the folders and subfolders needed in a Raspberry Pi to be able to use this code.
 You must create any folders that are missing on GitHub. Please see the following folder list. Indents indicate levels.
 
